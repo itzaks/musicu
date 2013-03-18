@@ -1,0 +1,170 @@
+body {
+	background: url(../img/background.jpg) 0 0 fixed;
+	color: #eae4e4;
+	width: 100%;
+	height: 100%;
+	font-family: "FuturaStdBook";
+	font-size: 14px;
+	text-shadow: 0 1px #000;
+
+}
+html {height: 100%;}
+h1, h2, h3, h4 {font-family: "FuturaStdBoldCondensed"; font-weight: normal; letter-spacing: 1px;}
+::selection 			{background: #de7140;}
+::-moz-selection 	{background: #de7140; color:#fff;}
+h1 {font-size: 30px; text-shadow: 0 2px #000;}
+h2 {font-size: 25px; text-shadow: 0 1px #000;}
+h3 {font-size: 23px; text-shadow: 0 1px #000; margin-bottom: 3px;}
+
+ul {margin: 0; padding: 0;}
+
+
+header {    
+	height: 65px;
+    overflow: visible;
+    padding-bottom: 85px;
+	position: relative;
+	z-index: 10;
+}
+#navbar {
+    background: url("../img/header_bg.png") repeat-x scroll 0 0 transparent;
+    height: 120px;
+    padding-bottom: 41px;
+    width: 100%;
+}
+header.fixed  #navbar {    
+	position: fixed;
+    top: -72px;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	height: 149px;
+	padding-top: 1px;
+	width: 100%;
+	background: url(../img/footer_bg.png) repeat-x 0 0;
+}
+
+header .logo {
+	position: relative;
+	top: 6px;
+	text-align: center;
+}
+
+header input {
+	background: #282c2c; 
+	color: #dad4d4; 
+	border: 0;
+	border-top: 1px solid #000;
+	border-bottom : 1px solid #444;
+	border-radius: 5px; 
+	width: 150px;
+	height: 14px;
+	margin-top: 20px;
+	padding: 5px 10px;
+	font-size: 14px;
+	text-shadow: 0 1px 0 #000;
+	font-family: "FuturaStdBook";
+	text-align: center;
+	position: relative;
+	top: -25px;
+	display: none;
+}
+header form.music_search {height: 33px;}
+ul li {
+	list-style-type: none;
+}
+li span.name 		{cursor: pointer;}
+li span.name:hover 	{color: #cac4c4;}
+
+.col_nomargin {margin-left: 0; margin-right: 0;}
+
+#main {
+	padding-bottom: 150px;
+}
+
+#win_search {
+	text-align: center;
+}
+
+#searchbar {
+	margin-bottom: 25px;
+}
+
+#win_search input {
+	text-align: center;
+	background: rgba(2,0,0,0.64); 
+	color: #eae4e4; 
+	border: 0;
+	border-top: 1px solid #28000b;
+	border-bottom : 1px solid #914219;
+	border-radius: 10px; 
+	width: 350px;
+	height: 40px;
+	padding: 10px 20px;
+	font-size: 24px;
+	text-shadow: 0 1px 0 #000;
+	font-family: "FuturaStdBoldCondensed"; font-weight: normal; letter-spacing: 1px;
+	text-transform: uppercase;
+}
+input:focus {
+	outline: none;
+}
+
+
+
+#message 		{display: none; position: relatve; width: 530px; margin: 0 auto; top: 0; z-index: 5; height: 90px; background: url(../img/bg_notfound.png) no-repeat 0 0; text-align: center;}
+#message .text 	{text-transform: uppercase; padding-top: 13px; font-size: 24px;}
+
+#win_play {display: none;}
+#win_play  .albums {width: 480px; margin: 0 auto; min-height: 200px;}
+
+#win_search input.active {color: #eae4e4;}
+#win_search div.search_results {width: 390px; margin: 0 auto; display: none; text-align: left;}
+#win_search div.search_results ul {margin-bottom: 20px; border-bottom: 1px solid #3f0011; padding-bottom: 15px; box-shadow: 0 1px 0 #914219;}
+#win_search div.search_results ul li {padding-left: 10px;}
+
+#right 	{width: 660px;}
+#left 	{width: 300px;}
+#horiz_load 		{width: 100%; height: 100%; display: none; position: fixed; top: 0; left: 0;}
+#horiz_load .bg		{background: #000; width: 100%; height: 100%; position: absolute; position: absolute; top: 0; left: 0;}
+#horiz_load .loader	{width: 160px; height: 20px; position: absolute; top: 50%; left: 50%; margin-top: -10px; margin-left: -80px; background: url(../img/load.gif?12);}
+var {display: none;}
+
+footer .now_playing {overflow: visible; padding-top: 14px; margin-left: 20px; margin-top: 6px;}
+footer .now_playing .track_name {color: #666; font-style: italic;}
+footer div.time {position: absolute; left: 60px; top: 82px; font-size: 12px; color: #999;}
+footer div.time .current_time 	{color: #7a7a7a;}
+footer div.time .total_time 	{color: #595959;}
+footer div.time {position: absolute; left: 60px; top: 82px; font-size: 12px; color: #999;}
+
+#win_play .artist_info {padding: 20px; text-align: center; background: rgba(2,0,0,0.3); border-top: 1px solid #18000b; border-bottom : 1px solid #914219; margin-bottom: 15px;}
+#win_play .artist_info h2 {color: #e1d7d2; font-size: 55px; font-family: "BallPark"; letter-spacing:0px; margin-bottom: 5px; text-shadow: 0 2px 0 #000;}
+#win_play .artist_info h2 .no {color: #f6d4bd; font-size:15px; font-family: "FuturaStdBook"; font-style: italic;}
+#win_play .artist_info div.img {margin:10px 22px; float: left; background-position: 50% 0; border-bottom : 1px solid #914219; border-top: 1px solid #000; border-radius: 3px; background-color: #1b0901; background-repeat: no-repeat; width: 275px; height: 200px; background-size: 100%;}
+
+
+#win_play .albums>h3 {padding: 15px 0; margin-bottom: 10px; border-bottom: 1px solid #3f0011; box-shadow: 0 1px 0 #914219;text-align: center;}
+
+li.artist_album 	{border-top: 1px solid transparent; border-bottom: 1px solid transparent; cursor: pointer; border-radius: 5px; text-align: left; padding: 10px; min-height: 80px; margin-bottom: 15px;}
+li.artist_album:hover 		{background: rgba(2,0,0,0.64);  border-top: 1px solid #28000b; border-bottom : 1px solid #914219;}
+li.artist_album.open	 	{background: rgba(2,0,0,0.3);  border-top: 1px solid #28000b; border-bottom : 1px solid #914219;}
+li.artist_album .imgwrap {float: left; height: 80px; width: 87px;}
+li.artist_album .imgwrap img {height: 70px; width: 70px; border: 3px solid rgba(2,0,0,0.8); border-radius: 7px; box-shadow: 0 1px #914219;}
+li.artist_album.open .imgwrap img { box-shadow: 0 1px #914219;}
+
+li.artist_album h3 {float: left; font-size: 21px; letter-spacing: 0; line-height: 1.2; width: 290px;}
+li.artist_album h3 .year {color: #f6d4bd; display: block;}
+
+li.artist_album .tracks {padding: 10px 15px 10px 45px; text-align: left; font-size: 12px; display: none;clear: left;}
+li.artist_album .tracks li {list-style-type: decimal-leading-zero; }
+
+.seekbar  {width: 570px; height: 10px; padding-bottom: 1px; background: url(../img/seekbar_bg.png) no-repeat 0 0; position: absolute; top: 104px; left: 60px;  cursor: pointer;}
+
+.seekbar .ui-slider-handle 	{display: block; width: 23px; height: 23px; margin-left: -11px; background: url(../img/seekbar_button.png) no-repeat 0 0; position: absolute; top: -5px; left: 0;}
+.seekbar .ui-slider-handle:focus 	{outline: none;}
+.seekbar .ui-slider-range 	{background: url(../img/seekbar_fill.png) repeat-x 0 0; position: absolute; top: 0; left: 0; height: 10px;}
+
+.play_pause {width: 45px; height: 48px; background: url(../img/play_pause.png) no-repeat 0 0; position: absolute; top: 77px; left: 0; cursor: pointer;}
+.play_pause.playing {background-position: 0 48px; }

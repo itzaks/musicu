@@ -1,0 +1,44 @@
+!!! 5
+html
+  head
+    meta(charset='utf-8' )
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    title Pipe
+    link(rel='stylesheet', href='/stylesheets/app.css')
+    link(rel='stylesheet', href='/stylesheets/vendor.css')
+
+    script
+      window.brunch = window.brunch || {};
+      window.brunch['auto-reload'] = {enabled: true};
+
+    script(src='/javascripts/vendor.js')
+    script(src='/javascripts/app.js')
+    script
+      require('initialize')
+
+  body#application
+    .container
+      .row
+        .navbar.navbar-inverse
+          .navbar-inner
+            .container
+              button.btn.btn-navbar(type='button', data-toggle='collapse', data-target='.nav-collapse')
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              .nav-collapse.collapse
+                ul.nav
+                  li.active
+                    a(href='#')
+                      | PIPE
+                  li
+                    a(href='#')
+                      | About
+
+      .row
+        .span3
+          #player
+            #ytapiplayer You need Flash player 8+ and JavaScript enabled to view this video.
+        .span9
+          #content
+          //layout partials goes here

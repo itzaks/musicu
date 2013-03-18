@@ -1,0 +1,71 @@
+color-white = #F5F2ED
+color-black = #181030
+color-gray = #CECECE
+
+font-body = 'Crimson Text', "Georgia", "Times", "Times New Roman", serif, sans-serif
+
+body
+  font: 18px/1.4 font-body
+  background: color-white
+  color: color-black
+
+h1, h2, h3
+  font-weight: 700
+  font-size: 2em
+  text-align: center
+  margin-bottom: 0.5em
+
+p
+  margin-bottom: 0.5em
+
+input,
+button
+  font-size: 1em
+  font-family: font-body
+  
+input
+  border: 0.2em solid color-gray
+  padding: 0.2em 0.4em
+  transition: border 1s ease-out
+  background: color-white
+  color: lighten(color-black, 10%)
+  
+  &:hover
+    border-color: color-black
+    
+  &:focus, &:active
+    color: color-black
+    border-color: color-black
+    background: white
+    outline: 0
+    cursor: text
+
+button,
+.button
+  padding: 0.5em 0.6em 0.4em
+  background: color-black
+  color: color-white
+  border: 0
+  text-transform: uppercase
+  font-family: Arial
+  letter-spacing: 1px
+  font-size: 0.9em
+  cursor: pointer
+  position: relative
+  
+  &:hover
+    background-color: lighten(color-black, 10%)
+    
+  &:active
+    top: 1px
+    background-color: lighten(color-black, 20%)
+    
+label
+  display: block   
+  
+.hero
+  font-size: 1.1em
+  margin-bottom: 0.3em
+
+.center-text
+  text-align: center
