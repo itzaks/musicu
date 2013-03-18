@@ -5,9 +5,14 @@ class Application
   constructor: ->
     @api = new API = require('lib/api')
     @events = _.extend @events, Backbone.Events
+
+    #root
+    @root = if window.location.href.indexOf('localhost') != -1 then '' else '/musicu'
+
     @router = new Router = require 'lib/router'
 
   init: ->
+
     @chrome()
 
   chrome: ->
