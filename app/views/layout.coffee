@@ -1,4 +1,5 @@
 View = require('./view')
+Player = require('./player')
 
 # Application frame
 module.exports = class Application extends View
@@ -13,7 +14,8 @@ module.exports = class Application extends View
 
   #on dom ready
   initialize: ->
-    @parts.content = @$("#content")
     super()
+    
+    @parts.content = @$("#content")
 
     console.log @parts
