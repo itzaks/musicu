@@ -3,7 +3,10 @@ musicu
 
 ##youtube music player
 
-Connecting disc0gs api with youtubes play & search api.
+Connecting yahoos music api with youtubes play & search api.
+Hosted on gh-pages here: ->
+
+brunch app, coffee & backbones
 
 Great success
 
