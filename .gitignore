@@ -1,7 +1,0 @@
-
-.DS_Store
-
-node_modules*
-generators*
-public*
-generators/collection_test/collection_test.coffee.hbs
