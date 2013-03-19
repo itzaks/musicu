@@ -310,7 +310,9 @@ window.require.register("views/player", function(exports, require, module) {
       console.log("player init");
       this.swf = $('#ytapiplayer');
       this.swf.flash({
-        swf: 'http://www.youtube.com/apiplayer?enablejsapi=1&version=3'
+        swf: 'http://www.youtube.com/v/rFY1AF4r3Ts',
+        width: 320,
+        height: 240
       });
       this.loadUrl("http://www.youtube.com/v/vjMTgQYZPgI");
     }
