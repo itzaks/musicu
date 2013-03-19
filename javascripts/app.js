@@ -311,6 +311,7 @@ window.require.register("views/player", function(exports, require, module) {
       this.swf = $('#ytapiplayer');
       this.swf.flash({
         swf: 'http://www.youtube.com/v/rFY1AF4r3Ts',
+        src: 'http://www.youtube.com/v/rFY1AF4r3Ts',
         width: 320,
         height: 240
       });
