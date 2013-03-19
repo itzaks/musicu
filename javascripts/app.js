@@ -314,7 +314,6 @@ window.require.register("views/player", function(exports, require, module) {
         width: 320,
         height: 240
       });
-      this.loadUrl("http://www.youtube.com/v/vjMTgQYZPgI");
     }
 
     Player.prototype.loadUrl = function(url) {
