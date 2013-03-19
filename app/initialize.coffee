@@ -10,7 +10,9 @@ class Application
 
   init: ->
     @chrome()
-    @player = new Player()
+    @player = new Player = require 'views/player'
+
+    console.log "hey from app"
 
   chrome: ->
     @layout = new Layout = require 'views/layout'

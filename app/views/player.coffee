@@ -3,8 +3,12 @@ module.exports = class Player
   constructor: ->
     console.log "player init"
     @swf = $('#ytapiplayer')
-    @swf.flash swf: 'http://www.youtube.com/apiplayer?enablejsapi=1&version=3'
-    @loadUrl "http://www.youtube.com/v/vjMTgQYZPgI"
+    @swf.flash 
+      src: 'http://www.youtube.com/apiplayer?enablejsapi=1&version=3'
+      width: 320
+      height: 240
+
+    # @loadUrl "http://www.youtube.com/v/vjMTgQYZPgI"
     
 
   loadUrl: (url) ->
